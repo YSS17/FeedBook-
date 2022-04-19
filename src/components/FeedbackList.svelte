@@ -1,6 +1,7 @@
 <script>
-
+  export let feedback = []
 </script>
 
-
-Feedback List
+{#each feedback as fb(fb.id)}
+  <h3>{fb.text}</h3>
+{/each}

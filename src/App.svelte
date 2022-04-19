@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Feedbacklist from './components/FeedbackList.svelte'
+
 	let feedback = [
 		{
 			id: '1',
@@ -20,5 +22,5 @@
 </script>
 
 <main>
-	<h1>Hello</h1>
+	<Feedbacklist {feedback}/>
 </main>
