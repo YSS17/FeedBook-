@@ -19,8 +19,13 @@
 		}
 	]
 	
+	const deleteFeedback = (e) => {
+		const	 itemId = e.detail
+		feedback = feedback.filter((item) => item.id != itemId)
+	}
 </script>
 
-<main>
-	<Feedbacklist {feedback}/>
+<main class="container">
+	<Feedbacklist {feedback} on:delete-feedback=
+	{deleteFeedback}/>
 </main>
